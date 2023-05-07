@@ -29,3 +29,11 @@ Cypress.Commands.add("addItem", (text) => {
     .should("be.visible")
     .type(`${text}{enter}`);
 });
+
+Cypress.Commands.add("editItem", (text) => {
+  cy.get(".view > label")
+    .should("be.visible")
+    .dblclick();
+  
+  cy.get('.edit').clear().type(text);
+});
