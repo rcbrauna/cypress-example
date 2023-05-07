@@ -1,6 +1,6 @@
 describe("Edit Item", () => {
   it("Edit Todo Item", () => {
-    cy.addItem("Teste");
-    cy.editItem("Editado");
+    cy.addItem("Tomar café");
+    cy.editItem("Bater o ponto");
   });
 });

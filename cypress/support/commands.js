@@ -37,3 +37,7 @@ Cypress.Commands.add("editItem", (text) => {
   
   cy.get('.edit').clear().type(text);
 });
+
+Cypress.Commands.add("endItem", () => {
+  cy.get(".toggle").check();
+});
